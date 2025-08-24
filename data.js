@@ -1,48 +1,52 @@
 const appList = [
     {
         id: 1,
-        nama: "Aplikasi Produktivitas",
-        developer: "Tim Produktif",
+        nama: "4G Lock",
+        developer: "Rasyid K.",
         kategori: "Alat",
-        deskripsiSingkat: "Atur jadwal dan tugas harian Anda dengan mudah dan efisien.",
-        deskripsiLengkap: "Dengan Aplikasi Produktivitas, Anda dapat merencanakan hari Anda, menetapkan pengingat, dan melacak kemajuan proyek. Antarmuka yang bersih membuatnya menyenangkan untuk digunakan setiap hari.",
-        ikon: "https://via.placeholder.com/150/3498db/FFFFFF?Text=App1",
+        deskripsiSingkat: "Kunci jaringan 4G LTE untuk koneksi internet yang lebih stabil.",
+        deskripsiLengkap: "Dengan Aplikasi 4G Lock, Anda dapat mengunci jaringan 4G LTE pada perangkat Anda untuk memastikan koneksi internet yang lebih stabil dan cepat. Sangat cocok untuk streaming, gaming, dan browsing tanpa gangguan.",
+        ikon: "https://github.com/krasyid822/lte_lock/blob/dc758b917d25808ac74cb50fc8a487eff559a465/web/icons/Icon-maskable-512.png?raw=true",
         screenshots: [
-            "https://via.placeholder.com/200x350/ecf0f1/2c3e50?Text=SS1",
-            "https://via.placeholder.com/200x350/ecf0f1/2c3e50?Text=SS2",
-            "https://via.placeholder.com/200x350/ecf0f1/2c3e50?Text=SS3"
+            "https://github.com/krasyid822/lte_lock/blob/e0d1a0e195efce6e76dd3f03b409c5cdac17b5d4/SCREENSHOTS/Screenshot_2025-08-24-21-29-40-69_426a5588c5110cd01d5af17e47adb223.jpg?raw=true",
+            "https://github.com/krasyid822/lte_lock/blob/e0d1a0e195efce6e76dd3f03b409c5cdac17b5d4/SCREENSHOTS/Screenshot_2025-08-24-21-27-50-77_37a66d687910f92b4549cb2321250240.jpg?raw=true",
+            "https://github.com/krasyid822/lte_lock/blob/e0d1a0e195efce6e76dd3f03b409c5cdac17b5d4/SCREENSHOTS/Screenshot_2025-08-24-21-27-35-41_37a66d687910f92b4549cb2321250240.jpg?raw=true",
+            "https://github.com/krasyid822/lte_lock/blob/e0d1a0e195efce6e76dd3f03b409c5cdac17b5d4/SCREENSHOTS/Screenshot_2025-08-24-21-27-28-09_37a66d687910f92b4549cb2321250240.jpg?raw=true",
+            "https://github.com/krasyid822/lte_lock/blob/e0d1a0e195efce6e76dd3f03b409c5cdac17b5d4/SCREENSHOTS/Screenshot_2025-08-24-21-27-22-11_37a66d687910f92b4549cb2321250240.jpg?raw=true"
         ],
-        linkDownload: "#"
+        linkDownload: "https://github.com/krasyid822/lte_lock/releases"
     },
     {
         id: 2,
-        nama: "Aplikasi Cuaca",
-        developer: "Studio Awan",
-        kategori: "Cuaca",
-        deskripsiSingkat: "Dapatkan prakiraan cuaca akurat di mana pun Anda berada.",
-        deskripsiLengkap: "Aplikasi Cuaca kami menyediakan data real-time, prakiraan per jam, dan peringatan cuaca ekstrem. Tampilannya indah dan mudah dipahami oleh semua kalangan.",
-        ikon: "https://via.placeholder.com/150/f1c40f/FFFFFF?Text=App2",
+        nama: "Senter Hantu (Need Improvement)",
+        developer: "Rasyid K.",
+        kategori: "Alat",
+        deskripsiSingkat: "Senter hantu yang dapat menyala dalam gelap.",
+        deskripsiLengkap: "Senter Hantu adalah aplikasi yang dirancang untuk memberikan penerangan dalam kegelapan. Dengan fitur-fitur canggih, aplikasi ini dapat membantu Anda menemukan jalan di tempat yang gelap.",
+        ikon: "https://github.com/krasyid822/senter_hantu/blob/c021e6d00d24920316d5c0909642178cc97defee/web/icons/Icon-maskable-512.png?raw=true",
         screenshots: [
-            "https://via.placeholder.com/200x350/ecf0f1/2c3e50?Text=SS1",
-            "https://via.placeholder.com/200x350/ecf0f1/2c3e50?Text=SS2"
+            "https://github.com/krasyid822/senter_hantu/blob/main/SCREENSHOTS/Screenshot_2025-08-24-21-48-13-44_8bf4a8e107b8116395c0f1cdbaa7596a.jpg?raw=true",
+            "https://github.com/krasyid822/senter_hantu/blob/main/SCREENSHOTS/Screenshot_2025-08-24-21-47-45-35_8bf4a8e107b8116395c0f1cdbaa7596a.jpg?raw=true",
+            "https://github.com/krasyid822/senter_hantu/blob/main/SCREENSHOTS/Screenshot_2025-08-24-21-47-39-61_8bf4a8e107b8116395c0f1cdbaa7596a.jpg?raw=true",
+            "https://github.com/krasyid822/senter_hantu/blob/main/SCREENSHOTS/Screenshot_2025-08-24-21-47-32-30_8bf4a8e107b8116395c0f1cdbaa7596a.jpg?raw=true"
         ],
-        linkDownload: "#"
+        linkDownload: "https://github.com/krasyid822/senter_hantu/releases"
     },
     {
         id: 3,
-        nama: "Aplikasi Finansial",
-        developer: "Dompet Digital ID",
-        kategori: "Keuangan",
-        deskripsiSingkat: "Catat pemasukan dan pengeluaran untuk mengelola keuangan.",
-        deskripsiLengkap: "Kelola anggaran Anda dengan cerdas. Aplikasi ini membantu Anda melacak setiap transaksi, membuat kategori pengeluaran, dan memberikan laporan mingguan/bulanan.",
-        ikon: "https://via.placeholder.com/150/2ecc71/FFFFFF?Text=App3",
+        nama: "Jadwal Sholat (Under Development)",
+        developer: "Rasyid K.",
+        kategori: "Produktivitas",
+        deskripsiSingkat: "Jadwal sholat yang akurat dan mudah digunakan.",
+        deskripsiLengkap: "Aplikasi ini menyediakan jadwal sholat yang tepat waktu dan notifikasi untuk setiap waktu sholat (dalam pengembangan). Dengan antarmuka yang sederhana, pengguna dapat dengan mudah menavigasi dan menemukan informasi yang mereka butuhkan.",
+        ikon: "https://github.com/krasyid822/jadwal_sholat_app/blob/main/web/icons/Icon-maskable-512.png?raw=true",
         screenshots: [
-            "https://via.placeholder.com/200x350/ecf0f1/2c3e50?Text=SS1",
-            "https://via.placeholder.com/200x350/ecf0f1/2c3e50?Text=SS2",
-            "https://via.placeholder.com/200x350/ecf0f1/2c3e50?Text=SS3",
-            "https://via.placeholder.com/200x350/ecf0f1/2c3e50?Text=SS4"
+            "https://github.com/krasyid822/jadwal_sholat_app/blob/main/SCREENSHOTS/Screenshot_2025-08-24-21-59-29-20_c07d3fa2d26ebcd173936b391c9ec37b.jpg?raw=true",
+            "https://github.com/krasyid822/jadwal_sholat_app/blob/main/SCREENSHOTS/Screenshot_2025-08-24-21-59-13-52_c07d3fa2d26ebcd173936b391c9ec37b.jpg?raw=true",
+            "https://github.com/krasyid822/jadwal_sholat_app/blob/main/SCREENSHOTS/Screenshot_2025-08-24-21-58-29-25_c07d3fa2d26ebcd173936b391c9ec37b.jpg?raw=true",
+            "https://github.com/krasyid822/jadwal_sholat_app/blob/main/SCREENSHOTS/Screenshot_2025-08-24-21-58-23-60_c07d3fa2d26ebcd173936b391c9ec37b.jpg?raw=true"
         ],
-        linkDownload: "#"
+        linkDownload: "https://github.com/krasyid822/jadwal_sholat_app/releases"
     }
     // Untuk menambah aplikasi baru, cukup salin blok {...}, di atas,
     // tempel di sini, ganti id, dan isi datanya.
