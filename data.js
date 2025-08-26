@@ -34,11 +34,11 @@ const appList = [
     },
     {
         id: 3,
-        nama: "Jadwal Sholat (Under Development)",
+        nama: "Jadwal Sholat",
         developer: "Rasyid K.",
         kategori: "Produktivitas",
         deskripsiSingkat: "Jadwal sholat yang akurat dan mudah digunakan.",
-        deskripsiLengkap: "Aplikasi ini menyediakan jadwal sholat yang tepat waktu dan notifikasi untuk setiap waktu sholat (dalam pengembangan). Dengan antarmuka yang sederhana, pengguna dapat dengan mudah menavigasi dan menemukan informasi yang mereka butuhkan.",
+        deskripsiLengkap: "Aplikasi ini menyediakan jadwal sholat yang tepat waktu dan notifikasi untuk setiap waktu sholat (mungkin anda perlu selalu mematikan notifikasi saat audio azan diputar karena ada kode loop enable yang belum dimatikan). Dengan antarmuka yang sederhana, pengguna dapat dengan mudah menavigasi dan menemukan informasi yang mereka butuhkan.",
         ikon: "https://github.com/krasyid822/jadwal_sholat_app/blob/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
         screenshots: [
             "https://github.com/krasyid822/jadwal_sholat_app/blob/main/SCREENSHOTS/Screenshot_2025-08-24-21-59-29-20_c07d3fa2d26ebcd173936b391c9ec37b.jpg?raw=true",
