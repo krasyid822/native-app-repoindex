@@ -46,7 +46,8 @@ const appList = [
             "https://github.com/krasyid822/jadwal_sholat_app/blob/main/SCREENSHOTS/Screenshot_2025-08-24-21-58-29-25_c07d3fa2d26ebcd173936b391c9ec37b.jpg?raw=true",
             "https://github.com/krasyid822/jadwal_sholat_app/blob/main/SCREENSHOTS/Screenshot_2025-08-24-21-58-23-60_c07d3fa2d26ebcd173936b391c9ec37b.jpg?raw=true"
         ],
-        linkDownload: "https://github.com/krasyid822/jadwal_sholat_app/releases"
+        linkDownload: "https://github.com/krasyid822/jadwal_sholat_app/releases",
+        linkWeb: "hfskbsk"
     }
     // Untuk menambah aplikasi baru, cukup salin blok {...}, di atas,
     // tempel di sini, ganti id, dan isi datanya.

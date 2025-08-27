@@ -119,6 +119,22 @@ header h1 {
     background-color: #2980b9;
 }
 
+.web-button {
+    display: inline-block;
+    background-color: #db3490;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.web-button:hover {
+    background-color: #b9298e;
+}
+
 .app-content h2 {
     border-bottom: 2px solid #eee;
     padding-bottom: 10px;

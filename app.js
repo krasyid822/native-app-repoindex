@@ -39,8 +39,21 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('app-developer').textContent = `Oleh: ${app.developer}`;
             document.getElementById('app-category').textContent = `Platform: ${app.platform}`;
             document.getElementById('app-download-link').href = app.linkDownload;
+            document.getElementById('app-web-link').href = app.linkWeb;
             document.getElementById('app-full-description').textContent = app.deskripsiLengkap;
             
+            const webLinkBtn = document.getElementById('app-web-link');
+            if (webLinkBtn) {
+                const link = app.linkWeb && String(app.linkWeb).trim();
+                if (link && link !== '#') {
+                    webLinkBtn.style.display = '';
+                    webLinkBtn.href = app.linkWeb;
+                } else {
+                    webLinkBtn.style.display = 'none';
+                    webLinkBtn.removeAttribute('href');
+                }
+            }
+
             const screenshotGallery = document.getElementById('screenshot-gallery');
             app.screenshots.forEach(screenshotUrl => {
                 const img = document.createElement('img');
@@ -108,8 +121,8 @@ function checkForUpdates() {
         .catch(error => console.log('Error checking for updates:', error));
 }
 
-// Jalankan cek update setiap 5 menit
-setInterval(checkForUpdates, 5 * 60 * 1000);
+// Jalankan cek update setiap 1 menit
+setInterval(checkForUpdates, 1 * 60 * 1000);
 
 // Cek update saat load pertama
 checkForUpdates();
