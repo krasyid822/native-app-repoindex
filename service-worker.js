@@ -1,13 +1,13 @@
 const CACHE_NAME = 'galeri-app-v1.0.8'; // Tingkatkan versi ini untuk setiap pembaruan
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/detail.html',
-  '/app.js',
-  '/data.js',
-  '/style.css',
-  '/manifest.json',
-  '/meta.json'
+  './',
+  './index.html',
+  './detail.html',
+  './app.js',
+  './data.js',
+  './style.css',
+  './manifest.json',
+  './meta.json'
 ];
 
 // Install event: Cache assets

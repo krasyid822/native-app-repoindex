@@ -71,7 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // Registrasi Service Worker untuk PWA dan cache management
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
+        // register using relative path so it works on GitHub Pages (repo pages)
+        navigator.serviceWorker.register('./service-worker.js')
             .then(registration => {
                 console.log('Service Worker registered:', registration);
 
@@ -107,8 +108,14 @@ if ('serviceWorker' in navigator) {
 
 // Fungsi untuk cek pembaruan konten setiap 5 menit
 function checkForUpdates() {
-    fetch('/meta.json?_=' + Date.now(), { cache: 'no-store' })
-        .then(response => response.json())
+    fetch('./meta.json?_=' + Date.now(), { cache: 'no-store' })
+        .then(response => {
+            const ct = response.headers.get('content-type') || '';
+            if (!response.ok) throw new Error('meta.json not found');
+            if (ct.includes('application/json')) return response.json();
+            // if server returned HTML (404 page), avoid parsing as JSON
+            throw new Error('meta.json returned non-JSON response');
+        })
         .then(data => {
             const currentVersion = localStorage.getItem('appVersion');
             if (!currentVersion || currentVersion !== data.version) {
