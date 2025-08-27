@@ -54,3 +54,62 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+// Registrasi Service Worker untuk PWA dan cache management
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+                console.log('Service Worker registered:', registration);
+
+                // Deteksi update baru
+                registration.addEventListener('updatefound', () => {
+                    const newWorker = registration.installing;
+                    if (newWorker) {
+                        newWorker.addEventListener('statechange', () => {
+                            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                // Ada update baru, tampilkan notifikasi
+                                if (confirm('Ada pembaruan aplikasi. Reload untuk menggunakan versi terbaru?')) {
+                                    // Kirim pesan ke SW untuk skip waiting
+                                    newWorker.postMessage({ type: 'SKIP_WAITING' });
+                                }
+                            }
+                        });
+                    }
+                });
+            })
+            .catch(error => {
+                console.log('Service Worker registration failed:', error);
+            });
+
+        // Saat SW baru aktif, reload halaman
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+            if (!window.__swReloading) {
+                window.__swReloading = true;
+                window.location.reload();
+            }
+        });
+    });
+}
+
+// Fungsi untuk cek pembaruan konten setiap 5 menit
+function checkForUpdates() {
+    fetch('/meta.json?_=' + Date.now(), { cache: 'no-store' })
+        .then(response => response.json())
+        .then(data => {
+            const currentVersion = localStorage.getItem('appVersion');
+            if (!currentVersion || currentVersion !== data.version) {
+                localStorage.setItem('appVersion', data.version);
+                if (currentVersion && confirm('Konten aplikasi telah diperbarui. Reload untuk melihat perubahan?')) {
+                    window.location.reload();
+                }
+            }
+        })
+        .catch(error => console.log('Error checking for updates:', error));
+}
+
+// Jalankan cek update setiap 5 menit
+setInterval(checkForUpdates, 5 * 60 * 1000);
+
+// Cek update saat load pertama
+checkForUpdates();
