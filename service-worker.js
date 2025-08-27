@@ -1,4 +1,4 @@
-const CACHE_NAME = 'galeri-app-v1.0.5'; // Tingkatkan versi ini untuk setiap pembaruan
+const CACHE_NAME = 'galeri-app-v1.0.8'; // Tingkatkan versi ini untuk setiap pembaruan
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
