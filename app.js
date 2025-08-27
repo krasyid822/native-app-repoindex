@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('app-icon').src = app.ikon;
             document.getElementById('app-name').textContent = app.nama;
             document.getElementById('app-developer').textContent = `Oleh: ${app.developer}`;
-            document.getElementById('app-category').textContent = `Kategori: ${app.kategori}`;
+            document.getElementById('app-category').textContent = `Platform: ${app.platform}`;
             document.getElementById('app-download-link').href = app.linkDownload;
             document.getElementById('app-full-description').textContent = app.deskripsiLengkap;
             
