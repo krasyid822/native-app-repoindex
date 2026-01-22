@@ -48,6 +48,37 @@ const appList = [
         ],
         linkDownload: "https://github.com/krasyid822/jadwal_sholat_app/releases",
         linkWeb: "https://krasyid822.github.io/jadwal_sholat_app/"
+    },
+    {
+        id: 4,
+        nama: "foodie.ID",
+        developer: "Rasyid K.; R. Clark",
+        platform: "Android, Web",
+        deskripsiSingkat: "Aplikasi pemesanan dan pencarian restoran terdekat yang terafeliasi.",
+        deskripsiLengkap: "foodie.ID adalah aplikasi yang memudahkan pengguna untuk mencari, memesan, dan menemukan restoran terdekat yang terafiliasi dengan berbagai promo menarik. Dengan antarmuka yang user-friendly, pengguna dapat dengan mudah menavigasi menu, melihat ulasan, dan melakukan pemesanan langsung dari aplikasi.",
+        ikon: "https://github.com/krasyid822/clark_deliv_eats/blob/main/android/app/src/main/res/mipmap-xxxhdpi/launcher_icon.png?raw=true",
+        screenshots: [
+            "https://github.com/user-attachments/assets/bb4572b2-8836-48e2-937a-f766f10d7c10?raw=true",
+            "https://github.com/user-attachments/assets/d67565ec-9a35-4dd4-a1b0-ba445f36d6aa?raw=true"
+        ],
+        linkDownload: "https://github.com/krasyid822/clark_deliv_eats/releases",
+        linkWeb: "https://deliveats.ruswanda.my.id/"
+    },
+    {
+        id: 5,
+        nama: "Ruswanda Clark",
+        developer: "Rasyid K.; R. Clark",
+        platform: "Android, Web",
+        deskripsiSingkat: "Aplikasi portofolio dan informasi tentang Ruswanda Clark.",
+        deskripsiLengkap: "Ruswanda Clark adalah aplikasi yang menampilkan portofolio, proyek, dan informasi terkait Ruswanda Clark. Aplikasi ini dirancang untuk memberikan wawasan tentang karya dan pencapaian Ruswanda Clark dalam berbagai bidang.",
+        ikon: "https://github.com/krasyid822/capacitor-ruswanda-clark-portofolio/blob/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+        screenshots: [
+            "https://github.com/user-attachments/assets/3f895d2c-0222-4065-8ef2-0a6afd459c25?raw=true",
+            "https://github.com/user-attachments/assets/f25b7fe5-927b-496f-b0be-a33ada1fb0e4?raw=true",
+            "https://github.com/user-attachments/assets/9e535f89-5398-43c5-ad6d-d2a57197e8f6?raw=true"
+        ],
+        linkDownload: "https://github.com/krasyid822/capacitor-ruswanda-clark-portofolio/releases",
+        linkWeb: "https://ruswanda.my.id/"
     }
     // Untuk menambah aplikasi baru, cukup salin blok {...}, di atas,
     // tempel di sini, ganti id, dan isi datanya.
